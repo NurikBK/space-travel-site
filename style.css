@@ -99,6 +99,8 @@ select {
 /* ------------------ */
 /* Utility classes */
 /* ------------------ */
+
+/* General */
 .flex {
   display: flex;
   gap: var(--gap, 1rem);
@@ -107,6 +109,11 @@ select {
 .grid {
   display: grid;
   gap: var(--gap, 1rem);
+}
+
+.flow > *:where(:not(:first-child)) {
+  margin-top: var(--flow-space, 1rem);
+  outline: 1px solid red;
 }
 
 .container {
@@ -214,6 +221,8 @@ select {
   letter-spacing: 4.72px;
 }
 
-.numbered-title span {
-  color: hsla(231 77% 90%/0.4);
+.numbered-title > span {
+  margin-right: 0.5em;
+  font-weight: 700;
+  color: hsl(var(--clr-white) / 0.25);
 }
