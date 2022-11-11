@@ -49,7 +49,16 @@ figure,
 picture {
   margin: 0;
 }
-
+/* set up font-weight */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
 /* Set up body */
 body {
   line-height: 1.5;
