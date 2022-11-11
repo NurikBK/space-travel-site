@@ -237,4 +237,24 @@ select {
   border-radius: 50%;
   aspect-ratio: 1;
   text-decoration: none;
+  cursor: pointer;
 }
+
+.large-button:hover {
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #cfc1c8, ,
+      0 0 40px #cfc1c8, , 0 0 50px #cfc1c8, 0 0 60px #cfc1c8, , 0 0 70px #cfc1c8;
+  }
+  to {
+    box-shadow: 0 0 20px #fff, 0 0 30px #887d82, 0 0 40px #887d82,
+      0 0 50px #887d82, 0 0 60px #887d82, 0 0 70px #887d82, 0 0 80px #887d82;
+  }
+}
+
+
