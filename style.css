@@ -294,15 +294,22 @@ select {
 }
 
 .underline-indicators > * {
+  cursor: pointer;
   padding: var(--underline-gap, 1rem) 0;
+  border: none;
   border-bottom: 0.2rem solid hsl(var(--clr-white) / 0);
 }
 
 .underline-indicators > *:hover,
 .underline-indicators > *:focus {
-  border-color: hsl(var(--clr-white) / 0.25);
+  border-color: hsl(var(--clr-white) / 0.5);
 }
 
-.underline-indicators .active {
+.underline-indicators > .active,
+.underline-indicators > [aria-selected='true'] {
   border-color: hsl(var(--clr-white));
+}
+
+.tab-list {
+  --gap: 2.5rem;
 }
