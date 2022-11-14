@@ -150,6 +150,7 @@ select {
   text-align: center;
   display: grid;
   place-items: center;
+  padding-inline: 1rem;
 }
 
 .grid-container * {
