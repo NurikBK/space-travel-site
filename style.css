@@ -456,6 +456,7 @@ select {
 
 .underline-indicators > .active,
 .underline-indicators > [aria-selected='true'] {
+  color: hsl(var(--clr-white) / 1);
   border-color: hsl(var(--clr-white));
 }
 
@@ -611,7 +612,7 @@ body {
   }
   .destination-meta {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 }
 
@@ -637,6 +638,18 @@ body {
     padding-bottom: max(6rem, 20vh);
     align-items: end;
   }
+
+  .grid-container--destination {
+    grid-template-areas:
+      'title title title'
+      'image image tabs'
+      'image image content';
+  }
+
+  .grid-container--destination > img {
+    max-width: 80%;
+  }
+
   .destination-meta {
     flex-direction: row;
   }
