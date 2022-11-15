@@ -463,6 +463,9 @@ select {
   --gap: 2.5rem;
 }
 
+.tab-list > button {
+  background-color: transparent;
+}
 .dot-indicators > * {
   cursor: pointer;
   border: 0;
@@ -534,7 +537,7 @@ body {
 }
 
 @media (min-width: 35em) {
-  .home {
+  .destination {
     background-position: center center;
     background-image: url(./assets/destination/background-destination-tablet.jpg);
   }
@@ -558,6 +561,7 @@ body {
   display: grid;
   place-items: center;
   padding-inline: 1rem;
+  padding-bottom: 4rem;
 }
 
 .grid-container * {
@@ -571,6 +575,7 @@ body {
 /* destination layout */
 
 .grid-container--destination {
+  --flow-space: 2rem;
   grid-template-areas:
     'title'
     'image'
@@ -599,6 +604,17 @@ body {
   margin-top: 2.5rem;
 }
 
+@media (min-width: 35em) {
+  .numbered-title {
+    justify-self: start;
+    margin-top: 2rem;
+  }
+  .destination-meta {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
 @media (min-width: 45em) {
   .grid-container {
     text-align: left;
@@ -620,5 +636,8 @@ body {
   .grid-container--home {
     padding-bottom: max(6rem, 20vh);
     align-items: end;
+  }
+  .destination-meta {
+    flex-direction: row;
   }
 }
