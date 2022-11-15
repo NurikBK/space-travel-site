@@ -432,13 +432,29 @@ select {
   }
 }
 
-@media (min-width: 35em) and (max-width: 45em) {
+@media (min-width: 35em) and (max-width: 44.999em) {
   .primary-navigation a span {
     display: none;
   }
 }
 
 @media (min-width: 45em) {
+  .primary-header::after {
+    content: '';
+    display: block;
+    position: relative;
+    z-index: 100;
+    height: 1px;
+    width: 30%;
+    background: hsl(var(--clr-white) / 0.25);
+    margin-right: -2.5rem;
+    order: 1;
+  }
+
+  nav {
+    order: 2;
+  }
+
   .primary-navigation {
     margin-block: 2rem;
   }
