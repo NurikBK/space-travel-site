@@ -194,6 +194,21 @@ select {
   border: 0;
 }
 
+.skip-to-content {
+  position: absolute;
+  z-index: 9999;
+  background: hsl(var(--clr-white));
+  color: hsl(var(--clr-dark));
+  padding: 0.5em 1em;
+  left: 50%;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease-in;
+}
+
+.skip-to-content:focus {
+  transform: translateY(0);
+}
+
 /* Colors */
 
 .bg-dark {
@@ -445,7 +460,7 @@ select {
     position: relative;
     z-index: 100;
     height: 1px;
-    width: 30%;
+    width: 100%;
     background: hsl(var(--clr-white) / 0.25);
     margin-right: -2.5rem;
     order: 1;
