@@ -94,6 +94,7 @@ body {
   grid-template-rows: min-content 1fr;
 
   overflow-x: hidden;
+  scrollbar-gutter: stable;
 }
 
 /* make images easier to work with */
@@ -508,17 +509,19 @@ body {
 @media (min-width: 45rem) {
   .home {
     background-image: url(./assets/home/background-home-desktop.jpg);
+    background-position: center center;
   }
 }
 
 /* destination */
 .destination {
   background-image: url(./assets/destination/background-destination-mobile.jpg);
+  background-position: center center;
+  background-size: cover;
 }
 
 @media (min-width: 35rem) {
   .destination {
-    background-position: center center;
     background-image: url(./assets/destination/background-destination-tablet.jpg);
   }
 }
@@ -533,11 +536,11 @@ body {
 
 .crew {
   background-image: url(./assets/crew/background-crew-mobile.jpg);
+  background-position: center center;
 }
 
 @media (min-width: 35rem) {
   .crew {
-    background-position: center center;
     background-image: url(./assets/crew/background-crew-tablet.jpg);
   }
 }
@@ -762,7 +765,7 @@ body {
   }
 
   .grid-container--technology {
-    grid-template-columns: 1rem minmax(0, 4rem) minmax(0, 20rem) minmax(0, 30rem) 1rem;
+    grid-template-columns: 1rem;
     justify-items: center;
     align-items: center;
     grid-template-areas:
