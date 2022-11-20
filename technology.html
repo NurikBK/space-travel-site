@@ -78,13 +78,132 @@
         </ul>
       </nav>
     </header>
- 
- 
-    03 Space launch 101 1 2 3 The
-    terminology... Space capsule A space capsule is an often-crewed spacecraft
-    that uses a blunt-body reentry capsule to reenter the Earth's atmosphere
-    without wings. Our capsule is where you'll spend your time during the
-    flight. It includes a space gym, cinema, and plenty of other activities to
-    keep you entertained.
+    <main id="main" class="grid-container grid-container--technology flow">
+      <h1 class="numbered-title ff-sans-cond">
+        <span aria-hidden="true">03</span>
+        Space launch 101
+      </h1>
+      <!-- Numbers -->
+      <div
+        class="number-indicators flex fs-400 ff-serif"
+        role="tablist"
+        aria-label="crew member list"
+      >
+        <button
+          aria-selected="true"
+          aria-controls="launch-vehicle-tab"
+          role="tab"
+          data-image="launch-vehicle-image"
+          tabindex="0"
+        >
+          1
+        </button>
+        <button
+          aria-selected="false"
+          aria-controls="spaceport-tab"
+          role="tab"
+          data-image="spaceport-image"
+          tabindex="-1"
+        >
+          2
+        </button>
+        <button
+          aria-selected="false"
+          aria-controls="space-capsule-tab"
+          role="tab"
+          data-image="space-capsule-image"
+          tabindex="-1"
+        >
+          3
+        </button>
+      </div>
+
+      <article
+        class="technology-info flow"
+        id="lauch-vehicle-tab"
+        tabindex="0"
+        role="tabpanel"
+      >
+        <header class="flow flow--space-small">
+          <h2
+            class="fs-600 ff-sans-cond uppercase text-accent letter-spacing-2"
+          >
+            The terminology...
+          </h2>
+          <p class="fs-700 uppercase ff-serif">launch vehicle</p>
+        </header>
+        <p class="text-accent">
+          A launch vehicle or carrier rocket is a rocket-propelled vehicle used
+          to carry a payload from Earth's surface to space, usually to Earth
+          orbit or beyond. Our WEB-X carrier rocket is the most powerful in
+          operation. Standing 150 metres tall, it's quite an awe-inspiring sight
+          on the launch pad!
+        </p>
+      </article>
+      <article
+        class="technology-info flow"
+        id="spaceport-tab"
+        tabindex="-1"
+        role="tabpanel"
+      >
+        <header class="flow flow--space-small">
+          <h2
+            class="fs-600 ff-sans-cond uppercase text-accent letter-spacing-2"
+          >
+            The terminology...
+          </h2>
+          <p class="fs-700 uppercase ff-serif">Spaceport</p>
+        </header>
+        <p class="text-accent">
+          A spaceport or cosmodrome is a site for launching (or receiving)
+          spacecraft, by analogy to the seaport for ships or airport for
+          aircraft. Based in the famous Cape Canaveral, our spaceport is ideally
+          situated to take advantage of the Earth’s rotation for launch.
+        </p>
+      </article>
+
+      <article
+        class="technology-info flow"
+        id="space-capsule-tab"
+        tabindex="-1"
+        role="tabpanel"
+      >
+        <header class="flow flow--space-small">
+          <h2
+            class="fs-600 ff-sans-cond uppercase text-accent letter-spacing-2"
+          >
+            The terminology...
+          </h2>
+          <p class="fs-700 uppercase ff-serif">Space capsule</p>
+        </header>
+        <p class="text-accent">
+          A space capsule is an often-crewed spacecraft that uses a blunt-body
+          reentry capsule to reenter the Earth's atmosphere without wings. Our
+          capsule is where you'll spend your time during the flight. It includes
+          a space gym, cinema, and plenty of other activities to keep you
+          entertained.
+        </p>
+      </article>
+
+      <picture id="launch-vehicle-image">
+        <img
+          src="./assets/technology/image-launch-vehicle-landscape.jpg"
+          alt="launch vehicle"
+        />
+      </picture>
+      <picture hidden id="spaceport-image">
+        <img
+          src="./assets/technology/image-spaceport-landscape.jpg"
+          alt="spaceport"
+        />
+      </picture>
+
+      <picture hidden id="space-capsule-image">
+        <img
+          src="./assets/technology/image-space-capsule-landscape.jpg"
+          alt="space capsule"
+        />
+      </picture>
+    </main>
   </body>
 </html>
