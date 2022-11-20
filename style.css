@@ -762,7 +762,7 @@ body {
   }
 
   .grid-container--technology {
-    grid-template-columns: 1rem;
+    grid-template-columns: 1rem minmax(0, 4rem) minmax(0, 20rem) minmax(0, 30rem) 1rem;
     justify-items: center;
     align-items: center;
     grid-template-areas:
@@ -772,14 +772,19 @@ body {
 
   .number-indicators {
     flex-direction: column;
-    gap: 60px;
   }
   .number-indicators > * {
     width: 80px;
     height: 80px;
+    font-size: 2rem;
+  }
+
+  .grid-container--technology > .technology-info {
+    grid-area: content;
+    max-width: 60ch;
   }
 
   .grid-container--technology > picture {
-   min-width: 100%;
+    min-width: 100%;
   }
 }

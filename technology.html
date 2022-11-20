@@ -120,7 +120,7 @@
 
       <article
         class="technology-info flow"
-        id="lauch-vehicle-tab"
+        id="launch-vehicle-tab"
         tabindex="0"
         role="tabpanel"
       >
@@ -141,6 +141,7 @@
         </p>
       </article>
       <article
+        hidden
         class="technology-info flow"
         id="spaceport-tab"
         tabindex="-1"
@@ -163,6 +164,7 @@
       </article>
 
       <article
+        hidden
         class="technology-info flow"
         id="space-capsule-tab"
         tabindex="-1"
@@ -186,12 +188,20 @@
       </article>
 
       <picture id="launch-vehicle-image">
+        <source
+          media="(min-width: 45em)"
+          srcset="./assets/technology/image-launch-vehicle-portrait.jpg"
+        />
         <img
           src="./assets/technology/image-launch-vehicle-landscape.jpg"
           alt="launch vehicle"
         />
       </picture>
       <picture hidden id="spaceport-image">
+        <source
+          media="(min-width: 45em)"
+          srcset="./assets/technology/image-spaceport-portrait.jpg"
+        />
         <img
           src="./assets/technology/image-spaceport-landscape.jpg"
           alt="spaceport"
@@ -199,6 +209,10 @@
       </picture>
 
       <picture hidden id="space-capsule-image">
+        <source
+          media="(min-width: 45em)"
+          srcset="./assets/technology/image-space-capsule-portrait.jpg"
+        />
         <img
           src="./assets/technology/image-space-capsule-landscape.jpg"
           alt="space capsule"
